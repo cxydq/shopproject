@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+
+<script src="./jquery-3.4.1.js"></script>
+<script>
+var arr=[1,2,3,4,56,6]
+ var ll=$.map(arr,function(index,item){
+     
+    return index 
+
+})
+var colos=['yellow','pink','blue','red','purple']
+
+$('ul li').map(function(index,item){
+ var b=  $.map(colos,function(index,itemc){
+        return index
+   })
+    $(item).css('color',b[$(this).index('ul li')])
+
+})
+</script>
+
+
+
+
+
+
+
+</html>

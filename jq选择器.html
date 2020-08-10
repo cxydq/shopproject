@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id='aa'>点我</button>
+    <div class="box">
+            
+    </div>
+    <span>q</span>
+    <span>w</span>
+    <span>e</span>
+    <ul id="ul">
+
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4
+        </li>
+        <span>323</span>
+    </ul>
+    <div>2323</div>
+    <span>232</span>
+    <ul id='arr'>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+    
+</body>
+<script src="./jquery-3.4.1.js"></script>
+<script>
+    $('#aa').click(()=>{
+      $('.box').css('width',400).css('height',200).css('background','red')
+  
+    })
+//    $('ul>li').css('color','yellow')
+    $('.box~span').css('font-size','40px')  
+
+    $('#arr li').eq(2).css('color','blue')
+    
+</script>
+</html>

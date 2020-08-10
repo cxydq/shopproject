@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          #aa{
+              width: 100px;
+              height: 30px;
+              border-radius: 50% 100px  ;
+          }
+
+    </style>
+</head>
+<body>
+    <input value="" type="password" id='aa'/> <button id="btn">点我</button> <P id='ew'></P>
+    <button id="btn2">点我清除</button>
+    
+
+
+</body>
+<script>
+var btn1=document.getElementById('btn')
+var num=1
+btn1.onclick=()=>{
+setInterval(()=>{
+    num++
+},1000)
+   document.getElementById('ew').innerHTML=num
+}
+document.getElementById('btn2').onclick=()=>{
+    document.getElementById('ew').innerHTML=''
+    document.getElementById('aa').value=document.getElementById('ew').innerHTML
+
+
+}
+</script>
+</html>
